@@ -3,73 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aritro Chattopadhyay | Doctoral Researcher</title>
+    <title>Aritro Chattopadhyay | BGI Bayreuth</title>
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --accent-color: #3498db;
-            --text-color: #333;
-            --bg-color: #f4f7f6;
+            --primary: #2c3e50;
+            --secondary: #34495e;
+            --accent: #3498db;
+            --bg: #f8f9fa;
+            --white: #ffffff;
         }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: var(--primary-color);
-            color: white;
-            padding: 3rem 1rem;
-            text-align: center;
-        }
-        .container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 1.5rem;
-        }
-        section {
-            background: white;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h1 { margin: 0; font-size: 2.5rem; }
-        h2 { color: var(--primary-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
-        .scholar-badge {
-            background: var(--accent-color);
-            color: white;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            display: inline-block;
-            margin-top: 10px;
-        }
-        ul { list-style: none; padding: 0; }
-        ul li { margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative; }
-        ul li::before { content: "▹"; position: absolute; left: 0; color: var(--accent-color); }
-        .project-card {
-            border-left: 4px solid var(--accent-color);
-            padding-left: 1rem;
-            background: #f9f9f9;
-            padding: 1rem;
-        }
-        .footer { text-align: center; padding: 2rem; color: #777; font-size: 0.9rem; }
-        a { color: var(--accent-color); text-decoration: none; }
-        .contact-info { margin-top: 1rem; font-size: 0.9rem; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--primary); background: var(--bg); margin: 0; }
+        header { background: var(--primary); color: white; padding: 4rem 1rem; text-align: center; }
+        .container { max-width: 950px; margin: -3rem auto 2rem; padding: 0 1rem; }
+        section { background: var(--white); padding: 2.5rem; margin-bottom: 2rem; border-radius: 12px; shadow: 0 4px 6px rgba(0,0,0,0.05); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
+        h1 { margin: 0; font-size: 2.8rem; letter-spacing: -1px; }
+        h2 { color: var(--primary); border-left: 5px solid var(--accent); padding-left: 1rem; margin-top: 0; }
+        .badge { background: var(--accent); color: white; padding: 0.4rem 1rem; border-radius: 50px; font-weight: 600; display: inline-block; margin: 0.5rem 0; }
+        .nav-links { margin-top: 1.5rem; }
+        .nav-links a { color: rgba(255,255,255,0.8); margin: 0 15px; text-decoration: none; font-weight: 500; transition: 0.3s; }
+        .nav-links a:hover { color: white; }
+        .ref-list { font-size: 0.9rem; color: #555; }
+        .ref-item { margin-bottom: 1rem; padding-left: 2rem; text-indent: -2rem; }
+        sup { font-size: 0.75em; }
+        .project-meta { font-style: italic; color: var(--secondary); margin-bottom: 1rem; }
+        @media (max-width: 600px) { h1 { font-size: 2rem; } }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Aritro Chattopadhyay</h1>
-    <p>Doctoral Student | Bayerisches Geoinstitut (BGI), Universität Bayreuth</p>
-    <div class="scholar-badge">DAAD Scholar</div>
-    <div class="contact-info">
-        chattopadhyay.aritro@outlook.com | +91 9083132334 [cite: 1, 2]
+    <p>Doctoral Researcher at Bayerisches Geoinstitut, Universität Bayreuth</p>
+    <div class="badge">DAAD Scholar</div>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">PhD Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#references">References</a>
     </div>
 </header>
 
@@ -77,67 +47,61 @@
     <section id="about">
         <h2>About Me</h2>
         <p>
-            I am a highly motivated Geoscientist specializing in computational and planetary sciences[cite: 4, 11]. 
-            My research focuses on developing numerical models to understand the geochemical and geodynamic 
-            evolution of planetary bodies[cite: 8, 11]. I am currently pursuing my PhD at the 
-            Bayerisches Geoinstitut, Universität Bayreuth, supported by the DAAD scholarship.
+            I am a computational geoscientist focused on the long-term evolution of terrestrial planets. 
+            Currently, I am a Doctoral Student at the <strong>Bayerisches Geoinstitut (BGI)</strong>, 
+            supported by a DAAD scholarship. My expertise lies in numerical modeling of planetary interiors, 
+            geochemistry, and mantle dynamics.
         </p>
     </section>
 
-    <section id="current-research">
-        <h2>Current PhD Research</h2>
-        <div class="project-card">
-            <h3>Advanced 3D Numerical Model of Venus [cite: 62]</h3>
-            <p><strong>Focus:</strong> Coupled Atmosphere/Mantle Evolution with Late Accretion Impact Sequences[cite: 62, 63].</p>
-            <p>
-                My research utilizes the advanced 3D capabilities of the <strong>StagYY</strong> code to investigate how 
-                late accretion (LA) — the delivery of meteoric material after core formation — influenced the 
-                divergent evolution of Earth and Venus[cite: 71, 72]. 
-            </p>
-            <ul>
-                <li>Modeling 3D spherical shell geometry to represent mantle convection and degassing[cite: 92].</li>
-                <li>Investigating Argon isotopes (${}^{36}Ar$, ${}^{38}Ar$, and ${}^{40}Ar$) as tracers for volatile delivery and volcanic degassing[cite: 84, 85].</li>
-                <li>Assessing scaling laws between 2D and 3D simulations for planetary evolution[cite: 77].</li>
-            </ul>
-        </div>
+    <section id="research">
+        <h2>PhD Research: Venus Evolution</h2>
+        <p class="project-meta">Project: Advanced 3D Numerical Model of Coupled Atmosphere/Mantle Evolution of Venus with Late Accretion Impact Sequences</p>
+        <p>
+            Using the <strong>StagYY</strong> thermochemical code, I model the divergent evolution of Venus and Earth. 
+            A primary focus is the influence of Late Accretion (LA)—the delivery of meteoric material after core formation—on 
+            volatile delivery and planetary habitability.
+        </p>
+        <ul>
+            <li><strong>Isotopic Tracers:</strong> Using <sup>36</sup>Ar and <sup>38</sup>Ar to track volatile delivery, and <sup>40</sup>Ar to mark volcanic degassing history.</li>
+            <li><strong>3D Dynamics:</strong> Transitioning from 2D models to advanced 3D spherical shell simulations to better represent impact scenarios.</li>
+            <li><strong>Feedback Loops:</strong> Investigating the coupling between greenhouse gas degassing (N<sub>2</sub>, CO<sub>2</sub>, H<sub>2</sub>O) and mantle convection.</li>
+        </ul>
+    </section>
+
+    <section id="publications">
+        <h2>Manuscripts Under Preparation</h2>
+        <ul>
+            <li><strong>Chattopadhyay, A.</strong>, Mishra, P., Ghosh, B., Ghosh, D. — <em>The Effect of Lithosphere "Lid" Thickness on Mantle Melting in the Mid Oceanic Ridges.</em></li>
+            <li>Mishra, P., <strong>Chattopadhyay, A.</strong>, Ghosh, B., Ghosh, D. — <em>Tectonic Evolution of Shikoku Basin: A Geochemical Approach.</em></li>
+        </ul>
     </section>
 
     <section id="education">
         <h2>Education</h2>
         <ul>
-            <li>
-                <strong>M.Sc. in Applied Geology</strong> (2022–2024) [cite: 15]<br>
-                University of Calcutta | CGPA: 7.457/10 (Ranked 2nd in cohort) [cite: 16, 17]
-            </li>
-            <li>
-                <strong>B.Sc. in Geology</strong> (2019–2022) [cite: 19]<br>
-                University of Calcutta | CGPA: 8.575/10 [cite: 20]
-            </li>
+            <li><strong>M.Sc. Applied Geology</strong> | University of Calcutta (2024) | <em>Ranked 2nd in Cohort</em></li>
+            <li><strong>B.Sc. Geology</strong> | University of Calcutta (2022) | <em>First-Class Honours</em></li>
         </ul>
     </section>
 
-    <section id="technical-skills">
-        <h2>Technical Expertise</h2>
-        <ul>
-            <li><strong>Programming:</strong> MATLAB, Python, Linux OS enthusiast[cite: 34, 60].</li>
-            <li><strong>Numerical Modeling:</strong> StagYY, ASPECT Geodynamics, Geodynamic World Builder, alphaMELTS[cite: 35, 92].</li>
-            <li><strong>Data Analysis & Design:</strong> QGIS, Inkscape, Microsoft Office Automation[cite: 28, 36, 37, 55].</li>
-        </ul>
-    </section>
-
-    <section id="experience">
-        <h2>Selected Experience</h2>
-        <ul>
-            <li><strong>Sakura Science Exchange Programme:</strong> Kanazawa University & field-work in Kyushu, Japan (2024)[cite: 45, 49].</li>
-            <li><strong>Master's Thesis:</strong> Investigated the effect of Lithospheric Lid thickness on mantle melting at Mid-Oceanic Ridges[cite: 24, 26].</li>
-            <li><strong>Industrial Training:</strong> Coal-exploration at CMPDIL (Coal India Limited)[cite: 50].</li>
-        </ul>
+    <section id="references">
+        <h2>Selected Bibliography</h2>
+        <div class="ref-list">
+            <div class="ref-item">1. Gillmann, C. & Tackley, P. (2014). Atmosphere/mantle coupling and feedbacks on Venus. <em>JGR: Planets</em>.</div>
+            <div class="ref-item">2. Way, M. J., et al. (2016). Was Venus the first habitable world of our solar system? <em>GRL</em>.</div>
+            <div class="ref-item">4. Gillmann, C., et al. (2020). Dry late accretion inferred from Venus's coupled atmosphere and internal evolution. <em>Nature Geoscience</em>.</div>
+            <div class="ref-item">6. Tackley, P. J. (2008). Modelling compressible mantle convection... using the yin-yang grid. <em>PEPI</em>.</div>
+            <div class="ref-item">10. Raymond, S. N., et al. (2013). Dynamical and collisional constraints on a stochastic late veneer. <em>Icarus</em>.</div>
+            <div class="ref-item">12. O'Rourke, J. G. & Korenaga, J. (2015). Thermal evolution of Venus with argon degassing. <em>Icarus</em>.</div>
+            <p><em>(See full project proposal for complete list of 24 references.)</em></p>
+        </div>
     </section>
 </div>
 
-<div class="footer">
-    <p>&copy; 2026 Aritro Chattopadhyay. Built with academic passion.</p>
-</div>
+<footer style="text-align: center; padding-bottom: 2rem; color: #777;">
+    <p>Contact: chattopadhyay.aritro@outlook.com</p>
+</footer>
 
 </body>
 </html>
